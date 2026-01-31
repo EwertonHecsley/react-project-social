@@ -2,7 +2,7 @@
 
 .main{
     width: 100%;
-    height: auto;
+    height: 95vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -26,6 +26,26 @@
             margin: 2rem 0;
         }
 
+        @media (max-width:1400px) {
+            h1{
+                font-size: 4rem;
+            }
+
+            p{
+                font-size: 1rem;
+            }
+        }
+
+        @media (max-width:900px) {
+            h1{
+                font-size: 2rem;
+            }
+
+            p{
+                font-size: 0.8rem;
+            }
+        }
+
         .button{
             width: 30%;
             height: 3rem;
@@ -42,6 +62,13 @@
 
             &:hover{
                 background-color: v.$secondary-color-light-pink;
+            }
+        }
+
+        @media (max-width:900px) {
+            .button{
+                width: 50%;
+                font-size: 0.8rem;
             }
         }
 
@@ -77,6 +104,21 @@
                 }
             }
         }
+
+        @media (max-width:900px) {
+            .data_nambers{
+                article{
+                    width: 20%;
+                    h2{
+                        font-size: 1.8rem;
+                    }
+
+                    p{
+                        font-size: 0.8rem;
+                    }
+                }
+            }
+        }
     }
 
     .two{
@@ -84,5 +126,12 @@
         display: flex;
         justify-content: center;
         align-self:self-start;
+
+        @media (max-width:1400px) {
+                img{
+                    height: 90%;
+                    width: 90%;
+                }
+        }
     }
 }
