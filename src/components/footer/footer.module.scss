@@ -2,5 +2,8 @@
 
 .footer{
     background-color: v.$secondary-color-light-blue;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
 }
