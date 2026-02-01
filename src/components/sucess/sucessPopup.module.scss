@@ -1,0 +1,66 @@
+@import '../../styles/variables';
+
+.toast {
+  position: fixed;
+  top: 100px;
+  right: 24px;
+  background: white;
+  padding: 18px 22px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  font-family: $font-family;
+  z-index: 2000;
+
+  animation: slideIn 0.4s ease forwards;
+}
+
+.check {
+  font-size: 22px;
+  font-weight: bold;
+  color: #28a745;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 500;
+  color: $primary-color-blue;
+  margin: 0;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(120%) translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0) translateY(0);
+  }
+}
+
+.leave {
+  animation: slideOut 0.4s ease forwards;
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(120%);
+  }
+}
+
+@media (max-width: 500px) {
+  .toast {
+    right: 12px;
+    left: 12px;
+    top: 80px;
+    justify-content: center;
+  }
+}
