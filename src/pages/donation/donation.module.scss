@@ -9,6 +9,10 @@
     align-items: center;
     padding: 4rem 0;
 
+    @media (max-width:500px) {
+        height: auto;
+    }
+
     h1{
         color: v.$primary-color-blue;
     }
@@ -19,6 +23,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 7rem 6rem;
+
+        @media (max-width:500px) {
+            flex-direction: column;
+        }
     }
 
     .divisor{
