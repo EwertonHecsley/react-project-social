@@ -4,7 +4,7 @@ import s from './donation.module.scss'
 export const Donation = () => {
     return(
         <main className={s.main}>
-            <h1>Donations</h1>
+            <h1>Doação</h1>
             <section className={s.box}>
                 <Card
                     photo="/donation/instituto-grande-familia.png"

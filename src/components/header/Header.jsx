@@ -16,7 +16,7 @@ export const Header = () =>{
                     <nav>
                         <ul>
                             <li><Link to="/donation">Doação</Link></li>
-                            <li><Link to="/profile">Voluntariado</Link></li>
+                            <li><Link to="/volunteer">Voluntariado</Link></li>
                             <li><Link to="/settings">Mentoria</Link></li>
                             <li><Link to="/settings">Eventos & Palestras</Link></li>
                         </ul>
