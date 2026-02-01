@@ -17,8 +17,8 @@ export const Header = () =>{
                         <ul>
                             <li><Link to="/donation">Doação</Link></li>
                             <li><Link to="/volunteer">Voluntariado</Link></li>
-                            <li><Link to="/settings">Mentoria</Link></li>
-                            <li><Link to="/settings">Eventos & Palestras</Link></li>
+                            <li><Link to="/mentoring">Mentoria</Link></li>
+                            <li><Link to="/lectures">Eventos & Palestras</Link></li>
                         </ul>
                     </nav>
                 </div>
