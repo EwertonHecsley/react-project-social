@@ -1,7 +1,16 @@
 import s from './mentoring.module.scss'
-import {Card} from '../../components/card/Card'
+import { Card } from '../../components/card/Card'
+import { SuccessPopup } from '../../components/sucess/SucessPopup'
+import { useState } from 'react';
 
 export const Mentoring = () => {
+    const [showSucess, setShowSucess] = useState(false);
+
+    const handlerClick = () => {
+        setShowSucess(true);
+        setTimeout(() => setShowSucess(false), 4000);
+    }
+
     return (
         <main className={s.main}>
             <h1>Mentoria</h1>
@@ -12,6 +21,7 @@ export const Mentoring = () => {
                     title="Mentoria de Carreira e Emprego"
                     text="Orientação sobre currículo, entrevistas e primeiros passos no mercado de trabalho."
                     tx_button="Quero Participar"
+                    onParticipar={handlerClick}
                 />
                 <div className={s.divisor}></div>
                 <Card
@@ -20,6 +30,7 @@ export const Mentoring = () => {
                     title="Compartilhe Experiências"
                     text="Oriente jovens e profissionais iniciantes em sua área."
                     tx_button="Quero Participar"
+                    onParticipar={handlerClick}
                 />
                 <div className={s.divisor}></div>
                 <Card
@@ -28,8 +39,10 @@ export const Mentoring = () => {
                     title="Acompanhamento"
                     text="Participe como guia em jornadas de aprendizado e desenvolvimento."
                     tx_button="Quero Participar"
+                    onParticipar={handlerClick}
                 />
             </section>
+            {showSucess && <SuccessPopup onClose={() => setShowSucess(false)} />}
         </main>
     )
 }

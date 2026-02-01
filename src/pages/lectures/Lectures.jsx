@@ -1,7 +1,16 @@
 import s from './lectures.module.scss'
 import { Card } from '../../components/card/Card'
+import { useState } from 'react';
+import { SuccessPopup } from '../../components/sucess/SucessPopup';
 
 export const Lectures = () => {
+    const [showSucess, setShowSucess] = useState(false);
+
+    const handlerClick = () => {
+        setShowSucess(true);
+        setTimeout(() => setShowSucess(false), 4000);
+    }
+
     return (
         <main className={s.main}>
             <h1>Eventos & Palestras</h1>
@@ -13,6 +22,7 @@ export const Lectures = () => {
                     text="Atividade: Palestra motivacional sobre liderança jovem e transformação social."
                     txt_extra="Impacto: Inspirar adolescentes a se tornarem agentes de mudança em suas comunidades."
                     tx_button="Quero Participar"
+                    onParticipar={handlerClick}
                 />
                 <div className={s.divisor}></div>
                 <Card
@@ -22,6 +32,7 @@ export const Lectures = () => {
                     text="Atividade: Workshop de introdução à programação e inovação digital."
                     txt_extra="Impacto: Preparar jovens para o mercado de trabalho através da tecnologia."
                     tx_button="Quero Participar"
+                    onParticipar={handlerClick}
                 />
                 <div className={s.divisor}></div>
                 <Card
@@ -31,8 +42,10 @@ export const Lectures = () => {
                     text="Atividade: Palestra com profissionais de RH sobre como preparar currículo, entrevistas e postura no mercado."
                     txt_extra="Impacto: Ajudar jovens a conquistar oportunidades de trabalho."
                     tx_button="Quero Participar"
+                    onParticipar={handlerClick}
                 />
             </section>
+            {showSucess && <SuccessPopup onClose={()=> setShowSucess(false)}/>}
         </main>
     )
 }
