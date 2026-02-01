@@ -15,7 +15,7 @@ export const Header = () =>{
                 <div className={s.box_header_nav}>
                     <nav>
                         <ul>
-                            <li><Link to="/">Doação</Link></li>
+                            <li><Link to="/donation">Doação</Link></li>
                             <li><Link to="/profile">Voluntariado</Link></li>
                             <li><Link to="/settings">Mentoria</Link></li>
                             <li><Link to="/settings">Eventos & Palestras</Link></li>
