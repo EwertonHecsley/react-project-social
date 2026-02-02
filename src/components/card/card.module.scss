@@ -1,6 +1,10 @@
 @use "../../styles/variables" as v;
 
 .main{
+    opacity: 0;
+    transform: translateY(24px);
+    animation: fadeUp 0.6s ease forwards;
+
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -71,4 +75,11 @@
             margin-bottom: 2rem;
         }
     }
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
