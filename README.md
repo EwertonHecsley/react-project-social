@@ -1,16 +1,74 @@
-# React + Vite
+# 🌍 Plataforma de Projetos Sociais — React + SCSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação front-end desenvolvida em **React** com estilização em **SCSS**, criada com foco no **amadurecimento dos estudos em desenvolvimento front-end moderno**.
 
-Currently, two official plugins are available:
+O projeto simula uma plataforma de **projetos sociais**, contendo páginas como **Doação, Voluntariado, Mentoria e Eventos**, seguindo um layout responsivo e baseado em componentes reutilizáveis.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Objetivo do Projeto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este projeto foi construído como um **laboratório prático de aprendizado em React**, priorizando a aplicação de conceitos essenciais da biblioteca na construção de uma interface moderna, organizada e escalável.
 
-## Expanding the ESLint configuration
+Mais do que apenas o visual, o foco foi a **evolução técnica**, organização de código e boas práticas de componentização.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ⚛️ Conceitos de React Aplicados
+
+Durante o desenvolvimento foram utilizados e aprofundados os seguintes recursos:
+
+- **useState** → gerenciamento de estados da interface  
+- **useEffect** → controle de efeitos colaterais e ciclos de vida dos componentes  
+- **useRef** → manipulação de referências e acesso a elementos do DOM  
+- **Componentização** → separação de responsabilidades e reaproveitamento de componentes  
+- **Props e renderização dinâmica**  
+- **Manipulação de eventos**
+
+---
+
+## 🎨 Estilização
+
+- **SCSS modularizado**
+- Organização de estilos por componente
+- Uso de variáveis globais de cor e espaçamento
+- Layout **100% responsivo**, adaptado para:
+  - Desktop
+  - Tablet
+  - Mobile
+
+---
+
+## 📱 Funcionalidades da Interface
+
+- Navegação entre páginas com **React Router**
+- Cards dinâmicos para exibição de projetos
+- Menu de usuário com ações de conta
+- Layout adaptável a diferentes tamanhos de tela
+- Estrutura preparada para futura integração com API
+
+---
+
+## 🧠 Aprendizados Consolidados
+
+Este projeto ajudou a consolidar:
+
+✔ Estruturação de aplicações React  
+✔ Organização de componentes e estilos  
+✔ Controle de estado e ciclo de vida  
+✔ Construção de layouts responsivos  
+✔ Boas práticas de separação de responsabilidades  
+
+---
+
+## 🛠️ Tecnologias Utilizadas
+
+- **React**
+- **React Router DOM**
+- **SCSS (Sass)**
+- **JavaScript (ES6+)**
+- **HTML5**
+
+---
+
+O projeto esta rodando em : https://react-project-social.vercel.app/
