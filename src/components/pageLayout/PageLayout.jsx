@@ -10,7 +10,7 @@ export const PageLayout = ({ title, cards, onCardClick }) => {
         {cards.map((card, index) => (
           <>
             <Card
-              key={card.title}
+              key={card.txt}
               photo={card.photo}
               alt_photo={card.alt}
               title={card.title}
