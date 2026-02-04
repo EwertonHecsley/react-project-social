@@ -1,0 +1,72 @@
+@use "../../styles/variables" as v;
+
+.container {
+  position: relative;
+}
+
+.avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 3px solid v.$primary-color-blue;
+  cursor: pointer;
+  object-fit: cover;
+}
+
+.menu {
+  position: absolute;
+  top: 70px;
+  right: 0;
+
+  width: 230px;
+  background: v.$primary-color-blue;
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  padding: 0.8rem 0;
+
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+
+  animation: dropdown 0.2s ease forwards;
+  z-index: 999;
+}
+
+.name {
+  font-weight: bold;
+  color: white;
+  padding: 0.8rem 1.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  text-decoration: none;
+}
+
+.menu button {
+  background: none;
+  border: none;
+  color: white;
+  padding: 0.9rem 1.2rem;
+  text-align: left;
+  cursor: pointer;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.menu button:hover {
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.logout {
+  color: #ffb3b3;
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

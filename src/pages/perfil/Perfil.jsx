@@ -18,7 +18,7 @@ export const Perfil = () => {
                             <section className={s.icon}>
                                 <img src="/localizacao.png" alt="icone de localizacao" />
                                 <p>
-                                    Salvador, BA
+                                    Patos, PB
                                 </p>
                             </section>
                             <section className={s.icon}>

@@ -1,5 +1,6 @@
 import s from "./pageLayout.module.scss";
-import {Card} from '../card/Card'
+import { Card } from '../card/Card'
+import { Fragment } from "react";
 
 export const PageLayout = ({ title, cards, onCardClick }) => {
   return (
@@ -8,9 +9,8 @@ export const PageLayout = ({ title, cards, onCardClick }) => {
 
       <section className={s.box}>
         {cards.map((card, index) => (
-          <>
+          <Fragment key={index}>
             <Card
-              key={card.txt}
               photo={card.photo}
               alt_photo={card.alt}
               title={card.title}
@@ -20,7 +20,7 @@ export const PageLayout = ({ title, cards, onCardClick }) => {
               onParticipar={() => onCardClick?.(card)}
             />
             {index < cards.length - 1 && <div className={s.divisor}></div>}
-          </>
+          </Fragment>
         ))}
       </section>
     </main>

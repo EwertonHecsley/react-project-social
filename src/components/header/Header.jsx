@@ -1,5 +1,6 @@
 import { Link, useNavigate } from 'react-router-dom'
 import s from './header.module.scss'
+import { UserMenu } from '../userMenu/UserMenu';
 
 export const Header = () =>{
     const navigate = useNavigate();
@@ -24,7 +25,7 @@ export const Header = () =>{
                 </div>
             </section>
             <section className={s.box_header_user}>
-                <img src="https://avatars.githubusercontent.com/EwertonHecsley" alt="foto do usuário" />
+                <UserMenu/>
             </section>
         </header>
     )
